@@ -1,4 +1,4 @@
- Bulk RNA-seq analysis of Salmonella-infected Apcmin/+ tumour organoids
+Bulk RNA-seq analysis of Salmonella-infected Apcmin/+ tumour organoids
 
 Analysis code accompanying the MSci placement report:
 
@@ -16,9 +16,9 @@ This notebook performs differential expression analysis and pathway enrichment a
 
 ## Analysis steps
 
-1. **Differential expression analysis** using DESeq2 with shrunken log₂ fold change estimates
+1. **Differential expression analysis** using DESeq2
 2. **Volcano plots** for intracellular and extracellular infection conditions
-3. **Gene set enrichment analysis (GSEA)** using clusterProfiler with KEGG pathway database
+3. **Gene set enrichment analysis (GSEA)** using clusterProfiler with KEGG pathway database. Genes were ranked by log₂ fold change; gene sets containing 10–500 genes were tested with a p-value cutoff of 0.1 and Benjamini–Hochberg adjustment
 4. **NF-κB pathway heatmap** of differentially expressed genes across all four conditions
 
 ## Dependencies
